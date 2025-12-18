@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAREEZ ALLIYAN'S WEBSITE | EDUCATION</title>
+    <link rel="stylesheet" href="fareezstyle.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">FAREEZ ALLIYAN</div>
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="aboutfareez.html">About Me</a>
+    <a href="educationfareez.html" class="active">Education</a>
+    <a href="projectfareez.html">Skills and Qualifications</a>
+    <a href="familyfareez.html">The Alliyan Family</a
+    <a href="contactfareez.html">Contact Me!</a>
+    <a href="galleryfareez.html" class="active">Gallery</a>
+  </nav>
+</header>
+
+
+<main class="page-content">
+  <h1>My Education</h1>
+
+  <!-- Education Logos Row -->
+  <div class="edu-logos-row">
+
+    <div class="edu-logo-box" onclick="openEdu('tadika')">
+      <img src="smartreader.png" class="edu-logo">
+      <p>Smart Reader Kids
+           (2009-2011) </p>
+
+  <a 
+    href="https://maps.app.goo.gl/eU4ACPgChqyJQnez9"
+    target="_blank"
+    class="map-link"
+  >
+    📍 View on Google Maps
+  </a>
+    </div>
+
+
+    <div class="edu-logo-box" onclick="openEdu('skbsb')">
+      <img src="skbsb.png" class="edu-logo">
+      <p>Sekolah Kebangsaan Bandar Sungai Buaya
+(2012-2017)</p>
+
+  <a 
+    href="https://maps.app.goo.gl/biMse3ZFXkVZKGuK9"
+    target="_blank"
+    class="map-link"
+  >
+    📍 View on Google Maps
+  </a>
+
+
+    </div>
+
+    <div class="edu-logo-box" onclick="openEdu('star')">
+      <img src="star.png" class="edu-logo">
+      <p>Sekolah Tuanku Abdul Rahman (STAR), Ipoh
+(2018-2023)</p>
+
+
+  <a 
+    href="https://maps.app.goo.gl/1W8tnySpNDmYXSm7A"
+    target="_blank"
+    class="map-link"
+  >
+    📍 View on Google Maps
+  </a>
+
+    </div>
+
+    <div class="edu-logo-box" onclick="openEdu('uitm')">
+      <img src="itm.png" class="edu-logo">
+      <p>UiTM Segamat
+(2023-2026)</p>
+
+
+  <a 
+    href="https://maps.app.goo.gl/f82fDFj7xpwHo4Ti7"
+    target="_blank"
+    class="map-link"
+  >
+    📍 View on Google Maps
+  </a>
+
+    </div>
+
+  </div>
+</main>
+
+<!-- Popup -->
+<div id="eduPopup" class="edu-popup">
+  <div class="edu-popup-content">
+    <span class="edu-close" onclick="closeEdu()">&times;</span>
+    <h2 id="eduTitle"></h2>
+    <div id="eduGallery" class="edu-gallery"></div>
+  </div>
+</div>
+
+
+<footer class="site-footer">
+  &copy; 2025 ALLIYAN CORPORATION SDN. BHD. — All rights reserved
+</footer>
+
+
+<script src="scriptfareez.js"></script>
+
+</body>
+</html>
+
