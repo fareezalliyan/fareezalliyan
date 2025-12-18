@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Fareez Alliyan's Website | About Me</title>
+  <link rel="stylesheet" href="fareezstyle.css">
+</head>
+
+<body>
+
+<header class="topbar">
+  <div class="brand">FAREEZ ALLIYAN</div>
+  <nav class="nav">
+    <a href="fareez.html">Home</a>
+    <a href="aboutfareez.html" class="active">About Me</a>
+    <a href="educationfareez.html">Education</a>
+    <a href="projectfareez.html">Skills and Qualifications</a>
+    <a href="familyfareez.html">The Alliyan Family</a>
+    <a href="contactfareez.html">Contact Me!</a>
+    <a href="galleryfareez.html">Gallery</a>
+  </nav>
+</header>
+
+<main class="page-content">
+
+  <h1>About Me</h1>
+
+  <!-- Profile Picture -->
+<div class="about-photo">
+  <img src="aboutme.jpg"
+       class="hover-glow popup-img"
+       alt="About Me Photo"
+       onclick="openImgPopup(this)">
+</div>
+<div id="imgPopup" class="img-popup" onclick="closeImgPopup()">
+  <img id="popupImg" alt="Popup Image">
+</div>
+
+
+ 
+
+  <h2>My Biodata</h2>
+
+<table class="biodata-table">
+  <tr>
+    <th>Full Name</th>
+    <td>Fareez Alliyan Bin Hairuddin</td>
+  </tr>
+  <tr>
+    <th>Age</th>
+    <td>20</td>
+  </tr>
+  <tr>
+    <th>Gender</th>
+    <td>Male</td>
+  </tr>
+  <tr>
+    <th>Date of Birth</th>
+    <td>7<sup>th</sup> February 2005</td>
+  </tr>
+</table>
+
+
+  <!-- Interests -->
+  <section class="about-block">
+    <h2>My Interests</h2>
+
+    <div class="interest-images">
+      <img src="interest1.jpg" class="hover-glow popup-img" onclick="openImgPopup(this)">
+
+      <img src="interest2.jpg" class="hover-glow popup-img" onclick="openImgPopup(this)">
+
+    </div>
+
+    <p>
+      I enjoy staying active and productive. I love football and rugby, and I used
+      to play rugby during my school days. As for football, I never really got the chance to play with a team, but I still am passionate about the sport, with Manchester United being my favourite club since I was a little boy.  Recently, I’ve developed a strong interest in bodybuilding and spending time in the gym to improve myself physically and mentally.
+     
+    </p>
+
+
+
+  </section>
+<section class="about-block">
+  <h3>My Favourite Movies</h3>
+  <p>Some movies that I personally enjoyed</p>
+
+  <div class="movie-vertical">
+
+   
+    <div class="movie-card" onclick="playMovie(this)">
+      <img src="thewolf.jpg" alt="American Psycho">
+      <video controls>
+        <source src="wolfofwallstreet.mp4" type="video/mp4">
+      </video>
+      <p>The Wolf of Wall Street</p>
+    </div>
+
+
+    <div class="movie-card" onclick="playMovie(this)">
+      <img src="americanpsycho.jpg" alt="American Psycho">
+      <video controls>
+        <source src="patrickbateman.mp4" type="video/mp4">
+      </video>
+      <p>American Psycho</p>
+    </div>
+
+    <div class="movie-card" onclick="playMovie(this)">
+      <img src="anyonebutyouu.jpg" alt="Anyone But You">
+      <video controls>
+        <source src="anyonebutyou.mp4" type="video/mp4">
+      </video>
+      <p>Anyone But You</p>
+    </div>
+
+  </div>
+</section>
+  </div>
+</section>
+
+
+
+
+
+
+  <!-- Songs -->
+  <section class="about-block">
+    <h2>My Favourite Songs</h2>
+
+    <div class="music-grid">
+      <iframe src="https://open.spotify.com/embed/track/5xEM5hIgJ1jjgcEBfpkt2F" allow="encrypted-media"></iframe>
+      <iframe src="https://open.spotify.com/embed/track/145tqlcE6YFsjNfxi9K3AE" allow="encrypted-media"></iframe>
+      <iframe src="https://open.spotify.com/embed/track/6qBFSepqLCuh5tehehc1bd" allow="encrypted-media"></iframe>
+      <iframe src="https://open.spotify.com/embed/track/5ysBBGHvIGTqgQb5xdL3Lf" allow="encrypted-media"></iframe>
+      <iframe src="https://open.spotify.com/embed/track/5dRQUolXAVX3BbCiIxmSsf" allow="encrypted-media"></iframe>
+      <iframe src="https://open.spotify.com/embed/track/5KcT9rJDqQJUSFF3O9wPJ5" allow="encrypted-media"></iframe>
+
+ 
+
+
+    </div>
+  </section>
+
+
+
+<section class="about-block">
+  <h2>Facts About Me</h2>
+
+  <div class="fact-container">
+
+    <div class="fact">
+      🍛 <strong>Favourite Food:</strong><br>
+      <span class="fact-link" onclick="openFact('green curry')">Thai Chicken Green Curry</span>,
+      <span class="fact-link" onclick="openFact('grilled salmon')">Grilled Salmon</span>,
+      <span class="fact-link" onclick="openFact('steak')">Steak</span>
+    </div>
+
+   
+    <div class="fact">
+      🧠 <strong>Personality:</strong><br>
+      Calm, observant, disciplined, and always focused on self-improvement.
+    </div>
+
+    <div class="fact">
+      🌍 <strong>Countries I Want to Visit:</strong><br>
+      <span class="fact-link" onclick="openFact('england')"> England</span>,
+      <span class="fact-link" onclick="openFact('korea')"> Korea</span>,
+      <span class="fact-link" onclick="openFact('usa')"> USA</span>,
+      <span class="fact-link" onclick="openFact('italy')"> Italy</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- POPUP (USED FOR FOOD & COUNTRIES) -->
+<div id="factPopup" class="car-popup">
+  <span class="car-close" onclick="closeFact()">&times;</span>
+  <img id="factImage" src="" alt="Fact image">
+</div>
+
+
+
+
+</main>
+<footer class="site-footer">
+  &copy; 2025 ALLIYAN CORPORATION SDN. BHD. — All rights reserved
+</footer>
+  <script src="scriptfareez.js"></script>
+</body>
+</html>
+
+
+
+
+
+
